@@ -1,12 +1,11 @@
 @extends('layouts.auth')
 @section('content')
 
-<h1><center>Hai, Admin !</h1>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-4">
-            <div class="card">
-                <div class="card-header">Admin Login</div>
+            <div class="card" style="background-color:#FFEFD5">
+                <div class="card-header"><b>WELCOME ADMIN! Login Please</b></div>
 
                 <div class="card-body">
                     @if(count($errors) > 0)
