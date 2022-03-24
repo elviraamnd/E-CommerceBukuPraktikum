@@ -1,13 +1,6 @@
 @extends('layouts.auth')
 @section('content')
-<nav class="navbar navbar-expand-lg navbar-dark bg-danger mb-4">
-    <div class="container">
-        <a class="navbar-brand" href="/"><strong>Admin Aitixixi</strong></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</nav>
+
 <h1><center>Hai, Admin !</h1>
 <div class="container">
     <div class="row justify-content-center">
