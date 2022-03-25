@@ -19,7 +19,7 @@ class LoginControllerAdmin extends Controller
             //return dd(Auth::guard('admin'));
             //return dd(request()->all());
         }else{
-            return redirect()->back()->with('error','Username atau Password anda salah');
+            return redirect()->back()->with('error','LOGIN FAILED');
         }
         
     }

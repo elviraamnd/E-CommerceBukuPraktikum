@@ -27,7 +27,7 @@
                         @csrf
                         <div class="form-group">
                             <label for="username">Username</label>
-                            <input type="text" name="username" id="username" required class="form-control">
+                            <input type="email" name="username" id="username" required class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>

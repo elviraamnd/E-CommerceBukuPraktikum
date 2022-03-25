@@ -32,7 +32,8 @@
         /* Modify brand and text color */
          
         .navbar-custom .navbar-brand,
-        .navbar-custom .nav-link{
+        .navbar-custom .nav-link
+        {
             color: white;
         }
 
@@ -40,9 +41,9 @@
             background-color: #4fbfa8;
             position:absolute;
             bottom:0;
-            height:60px; 
+            height:100px; 
             padding:15px;
-                        min-width:100%;
+            min-width:100%;
         }
         .footer .col{
             color: white;
