@@ -32,8 +32,7 @@
         /* Modify brand and text color */
          
         .navbar-custom .navbar-brand,
-        .navbar-custom .nav-link
-        {
+        .navbar-custom .nav-link{
             color: white;
         }
 

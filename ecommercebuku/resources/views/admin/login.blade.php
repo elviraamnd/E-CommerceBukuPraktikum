@@ -38,6 +38,7 @@
                             <button type="submit" class="btn btn-danger">Login</button>
                         </div>
                     </form>
+                    <small class="d-block text-center mt-3">Not Registered? <a href="/adminregister">Register Now!</a></small>
                 </div>
             </div>
         </div>
