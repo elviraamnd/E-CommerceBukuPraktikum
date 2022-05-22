@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\VerificationrController;
 use App\Http\Controllers\Admin\RegisterControllerAdmin;
+use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\KurirController;
+use App\Http\Controllers\BukuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +19,7 @@ use App\Http\Controllers\Admin\RegisterControllerAdmin;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
 });
 
 Auth::routes(['verify' => true]);
@@ -29,6 +32,10 @@ Route::get('/adminregister', [App\Http\Controllers\Admin\RegisterControllerAdmin
 Route::post('/adminregister', [App\Http\Controllers\Admin\RegisterControllerAdmin::class, 'store'])->name('registeradmin');
 Route::post('actionlogin', [App\Http\Controllers\Admin\LoginControllerAdmin::class, 'action'])->name('actionlogin');
 Route::get('logoutAdmin', [App\Http\Controllers\Admin\LoginControllerAdmin::class, 'logoutAdmin'])->name('logoutadmin');
+
 Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
-    Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'dashboard'])->name ('dashboard');
-  });
+    Route::resource('/kategori', KategoriController::class);
+    Route::resource('/kurir', KurirController::class);
+    Route::resource('/buku', BukuController::class);
+});
+
