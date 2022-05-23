@@ -15,7 +15,7 @@ class LoginControllerAdmin extends Controller
 
     public function action(Request $request){
         if(Auth::guard('admin')->attempt(['username' => $request->username, 'password' => $request->password])){
-            return redirect()->route('dashboard');
+            return redirect()->route('kategori.index');
             //return dd(Auth::guard('admin'));
             //return dd(request()->all());
         }else{
