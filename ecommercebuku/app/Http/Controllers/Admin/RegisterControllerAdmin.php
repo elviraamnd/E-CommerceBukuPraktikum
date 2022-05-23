@@ -30,7 +30,7 @@ class RegisterControllerAdmin extends Controller
         );
         
         Admin::create($data);
-        return redirect('/adminregister')
+        return redirect('/adminlogin')
         ->with('success','Registration has been successful');
         
     }
